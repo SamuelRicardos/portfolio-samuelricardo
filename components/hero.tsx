@@ -6,11 +6,11 @@ import Image from "next/image";
 
 
 export default function Hero() {
-    const {scrollY} = useScroll();
-    const y   =useTransform(scrollY, [0, 500], [0, 100]);
+    const { scrollY } = useScroll();
+    const y = useTransform(scrollY, [0, 500], [0, 100]);
     return (
         <section className="min-h-screen relative overflow-hidden bg-black">
-            <ParticleCanvas/>
+            <ParticleCanvas />
             <div className="max-w-7xl mx-auto px-6 pt-32">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     {/* Text content */}
@@ -83,7 +83,7 @@ export default function Hero() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
                         className="lg:w-1/2 relative"
-                        style={{y}}
+                        style={{ y }}
                     >
                         <div className="realtive w-full aspect-square group">
                             {/* Animated Border */}
@@ -113,7 +113,7 @@ export default function Hero() {
                                 border border-white/10 bg-surface 
                                 backdrop-blur-sm"
                             >
-                                <Image src="/portfolio.jpg"
+                                <Image src="/SamueleganteG.png"
                                     alt="Avatar"
                                     fill
                                     className="object-cover scale-110 group-hover:scale-100
@@ -132,25 +132,7 @@ export default function Hero() {
                                     className="absolute bottom-8 left-8"
                                 >
 
-                <div className="text-2xl font-bold text-content">
-                    Based in
-                    <motion.span
-                      className="block bg-gradient-to-r
-                       from-primary to-secondary bg-clip-text text-transparent"
-                      animate={{ backgroundPosition: ['0% 50%', '100% 50%'] }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        repeatType: 'mirror'
-                      }}
-                      style={{
-                        backgroundSize: '200% 200%'
-                      }}
-                    >
-                      San Francisco, CA
-                    </motion.span>
-                  </div>
-                 </motion.div>
+                                </motion.div>
 
                             </motion.div>
                         </div>

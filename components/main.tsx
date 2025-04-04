@@ -3,25 +3,30 @@
 import { motion } from "framer-motion";
 import { FaNode, FaReact } from "react-icons/fa";
 import { SiD3Dotjs, SiFirebase, SiGraphql, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { RiBearSmileFill } from "react-icons/ri";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 
 
 const projects = [
     {
         title: "E-commerce Platform",
         description: "Modern shopping experinece with Next.js and Typescript",
+        url: "https://github.com/SamuelRicardos",
         tech: [
             { name: "React", icon: FaReact, color: "#61DAFB" },
             { name: "Next.js", icon: SiNextdotjs, color: "000000" },
             { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-
+            { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+            { name: "Zustand", icon: RiBearSmileFill, color: "#453F39" },
         ],
         image: '/projects/ecommerce.png'
     },
     {
         title: "Analytics Dashboard",
         description: "Real-time data visualization platform",
+        url: "https://github.com/SamuelRicardos",
         tech: [
             { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
             { name: "D3.js", icon: SiD3Dotjs, color: "#F9A03C" },
@@ -32,6 +37,7 @@ const projects = [
     {
         title: "Mobile Application",
         description: "Cross-platform mobile app for health tracking",
+        url: "https://github.com/SamuelRicardos",
         tech: [
             { name: "React Native", icon: FaReact, color: "#61DAFB" },
             { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
@@ -56,7 +62,7 @@ export default function Main() {
                 >
 
                     <h2 className="text-4xl md:text-5xl font-bold
-                    text-content mb-4 text-center">Selected Work</h2>
+                    text-content mb-4 text-center">Principais projetos</h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary
                     to-tertiary rounded-full"/>
 
@@ -107,8 +113,13 @@ export default function Main() {
                             mb-4 group/title">
 
                                         <h3 className="text-2xl font-bold text-content">{project.title}</h3>
-                                        <ArrowUpRightIcon className="h-6 w-6 text-content/50
-                                        group-hover/title:text-primary transition-colors duration-300"/>
+                                        {project.url && (
+                                            <Link href={project.url} target="_blank" rel="noopener noreferrer" title={`Ver ${project.title}`}>
+                                                <ArrowUpRightIcon
+                                                    className="h-6 w-6 text-content/50 group-hover/title:text-primary transition-colors duration-300"
+                                                />
+                                            </Link>
+                                        )}
 
                                     </div>
                                     <p className="text-content/80 mb-4">{project.description}</p>
@@ -144,18 +155,18 @@ export default function Main() {
 
                 </div>
                 {/* View More Button */}
-                <motion.div 
-                initial = {{opacity:0, y: 20}}
-                whileInView={{opacity:1, y:0}}
-                transition={{delay:0.4}}
-                className="flex justify-center mt-20 relative z-[5]"
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="flex justify-center mt-20 relative z-[5]"
                 >
 
                     <button className="relative px-8 py-3 rounded-full bg-surface
                     border border-white/10 hover:border-primary/10 transition-all group">
                         <span className="text-content transition-colors
                         relative z-[1]">
-                        View All Projects
+                            Ver mais
                         </span>
                         <div className="absolute inset-0 rounded-full
                         bg-gradient-to-r from-primary/10 to-tertiary/10
