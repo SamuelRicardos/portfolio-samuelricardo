@@ -1,6 +1,6 @@
 import { EnvelopeIcon } from "@heroicons/react/16/solid";
 import { GithubIcon, LinkedInIcon } from "./social-icons";
-
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -34,14 +34,33 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-4">Redes e contato</h3>
                         <ul className="flex space-x-4">
-                            <GithubIcon className="text-gray-400 h-6 w-6
-                        hover:text-white transition-colors"/>
-                            <LinkedInIcon className="text-gray-400 h-6 w-6
-                        hover:text-white transition-colors"/>
-                            <EnvelopeIcon className="text-gray-400 h-6 w-6
-                        hover:text-white transition-colors"/>
-
-
+                            <li>
+                                <Link
+                                    href="https://github.com/SamuelRicardos"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <GithubIcon className="text-gray-400 h-6 w-6 hover:text-white transition-colors" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="https://www.linkedin.com/in/samuel-ricardo-28880a24b/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <LinkedInIcon className="text-gray-400 h-6 w-6 hover:text-white transition-colors" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="https://mail.google.com/mail/?view=cm&to=samuelric4rdo@gmail.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <EnvelopeIcon className="text-gray-400 h-6 w-6 hover:text-white transition-colors" />
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="border-t border-gray-800 mt-12 pt-8 text-center">
