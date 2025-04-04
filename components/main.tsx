@@ -2,7 +2,7 @@
 'use client';
 import { motion } from "framer-motion";
 import { FaNode, FaReact } from "react-icons/fa";
-import { SiD3Dotjs, SiFirebase, SiGraphql, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiFirebase, SiMongodb, SiNextdotjs, SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 import { RiBearSmileFill } from "react-icons/ri";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
@@ -11,37 +11,39 @@ import Link from "next/link";
 
 const projects = [
     {
-        title: "E-commerce Platform",
-        description: "Modern shopping experinece with Next.js and Typescript",
-        url: "https://github.com/SamuelRicardos",
+        title: "Dashboard financeiro",
+        description: "Um dashboard moderno feito com NextJS e Firebase",
+        url: "https://github.com/SamuelRicardos/projeto-dashboard",
         tech: [
             { name: "React", icon: FaReact, color: "#61DAFB" },
             { name: "Next.js", icon: SiNextdotjs, color: "000000" },
-            { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+            { name: "Tailwind CSS", icon: SiTailwindcss, color: "06B6D4" },
             { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
             { name: "Zustand", icon: RiBearSmileFill, color: "#453F39" },
+            { name: "TS", icon: SiTypescript, color: "#3178C6" },
         ],
-        image: '/projects/ecommerce.png'
+        image: '/projects/Dashboard2.png'
     },
     {
-        title: "Analytics Dashboard",
-        description: "Real-time data visualization platform",
-        url: "https://github.com/SamuelRicardos",
+        title: "MarketList",
+        description: "Um CRUD de lista de mercado. Com funcionalidades extras como tema claro/escuro e histórico de compras",
+        url: "https://github.com/SamuelRicardos/lista-de-mercado",
         tech: [
-            { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-            { name: "D3.js", icon: SiD3Dotjs, color: "#F9A03C" },
-            { name: "Node.js", icon: FaNode, color: "#339933" }
+            { name: "React", icon: FaReact, color: "#61DAFB" },
+            { name: "Vite", icon: SiVite, color: "#3178C6" },
+            { name: "Zustand", icon: RiBearSmileFill, color: "#453F39" },
         ],
-        image: '/projects/analytics.jpg'
+        image: '/projects/ListaMercado.png'
     },
     {
-        title: "Mobile Application",
-        description: "Cross-platform mobile app for health tracking",
+        title: "Hashbnb",
+        description: "Hashbnb é um clone do Airbnb, desenvolvido com foco em experiência do usuário e boas práticas modernas.",
         url: "https://github.com/SamuelRicardos",
         tech: [
-            { name: "React Native", icon: FaReact, color: "#61DAFB" },
-            { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-            { name: "GraphQL", icon: SiGraphql, color: "#E535AB" }
+            { name: "React", icon: FaReact, color: "#61DAFB" },
+            { name: "Vite", icon: SiVite, color: "#3178C6" },
+            { name: "NodeJS", icon: FaNode, color: "#339933" },
+            { name: "MongoDB", icon: SiMongodb, color: "#339933" }
         ],
         image: '/projects/mobile.jpg'
     },
@@ -50,7 +52,7 @@ const projects = [
 
 export default function Main() {
     return (
-        <section className=" py-32 relative id='work'">
+        <section className=" py-32 relative" id='work'>
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Heading */}
 
