@@ -6,21 +6,17 @@ import Navbar from "@/components/navbar";
 export default function SobreMim() {
   return (
     <>
-      {/* Impede o scroll horizontal geral */}
       <main className="relative w-full overflow-x-hidden">
         <Navbar />
         <section
           className="relative min-h-screen pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden"
           id="sobremim"
         >
-          {/* Particle Background */}
           <div className="absolute inset-0 -z-10">
             <ParticleCanvas />
           </div>
 
-          {/* Conteúdo principal */}
           <div className="max-w-7xl mx-auto">
-            {/* Sobre mim */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +32,6 @@ export default function SobreMim() {
               </p>
             </motion.div>
 
-            {/* Experiência profissional */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -49,17 +44,17 @@ export default function SobreMim() {
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-tertiary rounded-full mx-auto mb-8" />
               <div className="text-content/80 max-w-3xl mx-auto space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold">Polícia Federal do Brasil</h3>
-                  <p className="text-sm">Desenvolvedor Python • 2023 - 2024</p>
+                  <h3 className="text-xl font-semibold">Polícia Federal</h3>
+                  <p className="text-sm">Estágio em desenvolvimento de software • 04/24 - 12/24</p>
                   <p>
-                    Atuei em projetos de automação de dados e construção de relatórios estratégicos. Foco em segurança, performance e confiabilidade dos sistemas desenvolvidos.
+                    Criação de interfaces, componentes e funcionalidades com Angular e Primeng, além de integração com o back-end e uso de API Rest. Prototipação de telas no Figma. Criação de endpoints com Java e Quarkus, realização de testes unitários com jUnit e melhoria de qualidade código com SonarQube.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold">Projetos Pessoais e Freelancers</h3>
-                  <p className="text-sm">2022 - Presente</p>
+                  <h3 className="text-xl font-semibold">Projetos Freelancers</h3>
+                  <p className="text-sm">04/25 - 05/25</p>
                   <p>
-                    Desenvolvimento de dashboards, landing pages, integrações com back-end, uso de Firebase e autenticação. Experiência com React, Next.js, TailwindCSS, Zustand, ShadcnUI, e integração de dados em projetos com arquitetura moderna.
+                    Desenvolvimento de landing pages utilizando React, NextJS e TailwindCSS.
                   </p>
                 </div>
               </div>
