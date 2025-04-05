@@ -31,11 +31,11 @@ const Contato = () => {
   };
 
   return (
-    <>
+    <main className="relative w-full overflow-x-hidden">
       <Navbar />
-      <section className="relative min-h-screen pt-32 pb-16 px-6" id="contact">
+      <section className="relative min-h-screen pt-32 pb-16 px-6 overflow-x-hidden" id="contact">
         {/* Background com partículas */}
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
           <ParticleCanvas />
         </div>
 
@@ -107,7 +107,7 @@ const Contato = () => {
           </motion.form>
         </div>
       </section>
-    </>
+    </main>
   );
 };
 
