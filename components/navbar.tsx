@@ -6,11 +6,11 @@ import { GithubIcon, LinkedInIcon } from './social-icons';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
-  { name: 'Projetos', href: '#work' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Experiência', href: '#experience' },
-  { name: 'Contato', href: '#contact' },
+  { name: 'Projetos', href: '/' },
+  { name: 'Sobre mim', href: '/sobremim' },
+  { name: 'Contato', href: '/contato' },
 ];
+
 
 const socialLinks = {
   github: "https://github.com/SamuelRicardos",
