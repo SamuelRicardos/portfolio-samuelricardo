@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ParticleCanvas } from "@/hooks/particle";
 import Navbar from "@/components/navbar";
+import Image from "next/image";
 
 export default function SobreMim() {
   return (
@@ -30,6 +31,7 @@ export default function SobreMim() {
               <p className="text-lg text-content/80 text-justify max-w-3xl mx-auto">
                 Olá, eu sou o Samuel Ricardo dos Santos Ferreira, tenho 20 anos e moro em Brasília-DF. Sou formado em Análise e Desenvolvimento de Sistemas na Faculdade Senac DF, sou Pós-graduando em Desenvolvimento fullstack na Unyleya e atuo como desenvolvedor fullstack. Sou apaixonado por tecnologia e adoro criar soluções que realmente fazem a diferença. No front-end, trabalho com Angular 17 e React JS para desenvolver interfaces modernas e intuitivas. No back-end, utilizo Node JS e Java com frameworks como Spring Boot ou Quarkus, garantindo que tudo funcione de forma eficiente e confiável. Na área de dados, utilizo Python, Airflow, Astro, Docker e AWS para construir ETLs, pipelines e datalakes. Estou sempre em constante aprendizado, buscando conhecer novas tecnologias e aprimorar minhas habilidades. Meu objetivo é entregar projetos que gerem impacto positivo tanto para as pessoas quanto para os negócios.
               </p>
+
             </motion.div>
 
             <motion.div
@@ -50,9 +52,18 @@ export default function SobreMim() {
                     Criação de interfaces, componentes e funcionalidades com Angular e Primeng, além de integração com o back-end e uso de API Rest. Prototipação de telas no Figma. Criação de endpoints com Java e Quarkus, realização de testes unitários com jUnit e melhoria de qualidade código com SonarQube.
                   </p>
                 </div>
+                <div className="flex justify-center mt-8">
+                  <Image
+                    src="/Pf_foto.png"
+                    alt="Samuel Ricardo"
+                    width={160}
+                    height={160}
+                    className="rounded-2xl w-80 shadow-lg object-cover"
+                  />
+                </div>
                 <div>
                   <h3 className="text-xl font-semibold">Projetos Freelancers</h3>
-                  <p className="text-sm">04/25 - 05/25</p>
+                  <p className="text-sm">03/25 - até o momento</p>
                   <p>
                     Desenvolvimento de landing pages utilizando React, NextJS e TailwindCSS.
                   </p>

@@ -194,7 +194,7 @@ export default function Main() {
 
                 </div>
                 
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
@@ -212,7 +212,7 @@ export default function Main() {
                         opacity-0 group-hover:opacity-100 transition-opacity"/>
                     </button>
 
-                </motion.div>
+                </motion.div> */}
             </div>
 
         </section>
