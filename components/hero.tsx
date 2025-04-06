@@ -13,7 +13,7 @@ export default function Hero() {
             <ParticleCanvas />
             <div className="max-w-7xl mx-auto px-6 pt-32">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
-                    {/* Text content */}
+                    
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -78,7 +78,7 @@ Especializado em Angular, React, Next.js, Node.js, Java, Spring Boot, MongoDB e 
                         </Link>
 
                     </motion.div>
-                    {/* Image Card */}
+                    
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -87,7 +87,7 @@ Especializado em Angular, React, Next.js, Node.js, Java, Spring Boot, MongoDB e 
                         style={{ y }}
                     >
                         <div className="realtive w-full aspect-square group">
-                            {/* Animated Border */}
+                            
                             <motion.div
                                 initial={{ scale: 0.95 }}
                                 animate={{ scale: 1 }}
@@ -101,7 +101,7 @@ Especializado em Angular, React, Next.js, Node.js, Java, Spring Boot, MongoDB e 
                                 via-secondary/30 to-tertiary/30
                                  opacity-50"
                             />
-                            {/* Floating Animation */}
+                            
                             <motion.div
                                 animate={{ y: [0, -20, 0] }}
                                 transition={{
@@ -114,7 +114,7 @@ Especializado em Angular, React, Next.js, Node.js, Java, Spring Boot, MongoDB e 
                                 border border-white/10 bg-surface 
                                 backdrop-blur-sm"
                             >
-                                <Image src="/SamueleganteG.png"
+                                <Image src="/Samuelegante.png"
                                     alt="Avatar"
                                     fill
                                     className="object-cover scale-110 group-hover:scale-100

@@ -2,7 +2,7 @@
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useState } from 'react';
 import MenuItem  from './menu-items';
-import { GithubIcon, LinkedInIcon } from './social-icons';
+import { GithubIcon, LinkedInIcon} from './social-icons';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo Section */}
+          
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2 group"
@@ -56,7 +56,7 @@ export default function Navbar() {
             </span>
           </motion.div>
 
-          {/* Desktop Navigation */}
+          
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-6 bg-background/80 px-4 py-2 
             rounded-full border border-white/5 shadow-lg shadow-primary/5">
@@ -89,7 +89,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
+          
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 rounded-lg bg-white/5 hover:bg-primary/10 transition-colors"
@@ -102,7 +102,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}

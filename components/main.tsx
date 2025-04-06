@@ -91,7 +91,7 @@ export default function Main() {
     return (
         <section className=" py-32 relative" id='work'>
             <div className="max-w-7xl mx-auto px-6">
-                {/* Section Heading */}
+                
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -106,7 +106,7 @@ export default function Main() {
                     to-tertiary rounded-full"/>
 
                 </motion.div>
-                {/* Project Grid */}
+                
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
             gap-8 relative z-10">
@@ -126,7 +126,7 @@ export default function Main() {
                                 className="group relative h-[500px] rounded-3xl overflow-hidden
                     bg-surface border border-white/10 cursor-pointer"
                             >
-                                {/* Image Section */}
+                                
                                 <motion.div
                                     className="h-[250px] relative"
                                     whileHover={{ scale: 1.05 }}
@@ -142,7 +142,7 @@ export default function Main() {
                                     />
                                 </motion.div>
 
-                                {/* Content Section */}
+                                
                                 <motion.div
                                     className="p-6 h-[25px] bg-surface"
                                     transition={{ duration: 0.3 }}
@@ -193,7 +193,7 @@ export default function Main() {
 
 
                 </div>
-                {/* View More Button */}
+                
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

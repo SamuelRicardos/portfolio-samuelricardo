@@ -1,6 +1,7 @@
 import { EnvelopeIcon } from "@heroicons/react/16/solid";
 import { GithubIcon, LinkedInIcon } from "./social-icons";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 export default function Footer() {
@@ -59,6 +60,15 @@ export default function Footer() {
                                     rel="noopener noreferrer"
                                 >
                                     <EnvelopeIcon className="text-gray-400 h-6 w-6 hover:text-white transition-colors" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="https://wa.me/5561992344884"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaWhatsapp className="text-gray-400 h-6 w-6 hover:text-white transition-colors" />
                                 </Link>
                             </li>
                         </ul>
