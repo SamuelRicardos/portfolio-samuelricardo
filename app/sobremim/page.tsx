@@ -54,7 +54,7 @@ export default function SobreMim() {
                 </div>
                 <div className="flex justify-center mt-8">
                   <Image
-                    src="/Pf_foto.png"
+                    src="/PF_foto.png"
                     alt="Samuel Ricardo"
                     width={160}
                     height={160}
