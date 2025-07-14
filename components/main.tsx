@@ -1,15 +1,45 @@
 
 'use client';
 import { motion } from "framer-motion";
-import { FaNode, FaReact, FaAngular, FaJava } from "react-icons/fa";
-import { SiFirebase, SiMongodb, SiNextdotjs, SiTailwindcss, SiTypescript, SiVite, SiPrimeng, SiMysql, SiSpringboot, SiShadcnui } from "react-icons/si";
+import { FaNode, FaReact, FaAngular, FaJava, FaDatabase, FaRobot } from "react-icons/fa";
+import { SiFirebase, SiMongodb, SiNextdotjs, SiTailwindcss, SiTypescript, SiVite, SiPrimeng, SiMysql, SiSpringboot, SiShadcnui, SiPostgresql, SiGithubactions } from "react-icons/si";
 import { RiBearSmileFill } from "react-icons/ri";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
+import { useState } from "react";
 
 
 const projects = [
+    {
+        title: "E-commerce",
+        description: "Aplicação completa de e-commerce com autenticação de usuários, controle de estoque, carrinho sincronizado com o back-end e finalização de pedidos.",
+        url: "https://github.com/SamuelRicardos/ecommerce-angular",
+        tech: [
+            { name: "Angular", icon: FaAngular, color: "#C50836" },
+            { name: "MongoDB", icon: SiMongodb, color: "#6EB442" },
+            { name: "Java", icon: FaJava, color: "#096CAB" },
+            { name: "Spring Boot", icon: SiSpringboot, color: "#71B544" },
+        ],
+        image: '/projects/Ecommerce.jpg'
+    },
+    {
+        title: "Projeto Questionários",
+        description: "Sistema interativo de perguntas por tema e nível, com lógica de vidas, progresso, perguntas, respostas e explicações geradas por IA.",
+        url: "https://github.com/SamuelRicardos/projeto-questionarios",
+        tech: [
+            { name: "React", icon: FaReact, color: "#61DAFB" },
+            { name: "Vite", icon: SiVite, color: "#3178C6" },
+            { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+            { name: "Java", icon: FaJava, color: "#096CAB" },
+            { name: "Spring Boot", icon: SiSpringboot, color: "#71B544" },
+            { name: "Zustand", icon: RiBearSmileFill, color: "#453F39" },
+            { name: "PostgreSQL", icon: SiPostgresql, color: "#1A6997" },
+            { name: "Gemini IA", icon: FaRobot, color: "#1A6997" },
+            { name: "CI/CD", icon: SiGithubactions, color: "#2088FF" }
+        ],
+        image: '/projects/Questionarios.png'
+    },
     {
         title: "Dashboard financeiro",
         description: "Um dashboard moderno feito com NextJS e Firebase",
@@ -24,17 +54,6 @@ const projects = [
             { name: "TS", icon: SiTypescript, color: "#3178C6" },
         ],
         image: '/projects/Dashboard2.png'
-    },
-    {
-        title: "MarketList",
-        description: "Um CRUD de lista de mercado. Com funcionalidades extras como tema claro/escuro e histórico de compras",
-        url: "https://github.com/SamuelRicardos/lista-de-mercado",
-        tech: [
-            { name: "React", icon: FaReact, color: "#61DAFB" },
-            { name: "Vite", icon: SiVite, color: "#3178C6" },
-            { name: "Zustand", icon: RiBearSmileFill, color: "#453F39" },
-        ],
-        image: '/projects/ListaMercado.png'
     },
     {
         title: "Hashbnb",
@@ -62,6 +81,40 @@ const projects = [
         image: '/projects/Cozinhacriativa.png'
     },
     {
+        title: "LoginPage",
+        description: "Uma página de login e cadastro com integração com back-end",
+        url: "https://github.com/SamuelRicardos/login-page-frontend",
+        tech: [
+            { name: "Angular", icon: FaAngular, color: "#C50836" },
+            { name: "Java", icon: FaJava, color: "#096CAB" },
+            { name: "Spring Boot", icon: SiSpringboot, color: "#71B544" },
+            { name: "H2", icon: FaDatabase, color: "#1A6997" }
+        ],
+        image: '/projects/LoginPage.png'
+    },
+    {
+        title: "Delícias da Lucinda",
+        description: "Projeto freelance. Uma landing page feito para uma microempresa.",
+        url: "https://github.com/SamuelRicardos/salgados",
+        tech: [
+            { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+            { name: "React", icon: FaReact, color: "#61DAFB" },
+            { name: "Tailwind CSS", icon: SiTailwindcss, color: "06B6D4" },
+        ],
+        image: '/projects/DeliciasDaLucinda.png'
+    },
+    {
+        title: "Lene boleira",
+        description: "Projeto freelance. Uma landing page feito para uma microempresa.",
+        url: "https://github.com/SamuelRicardos/lene-boleira",
+        tech: [
+            { name: "React", icon: FaReact, color: "#61DAFB" },
+            { name: "Vite", icon: SiVite, color: "#3178C6" },
+            { name: "Tailwind CSS", icon: SiTailwindcss, color: "06B6D4" },
+        ],
+        image: '/projects/LeneBoleira4.png'
+    },
+    {
         title: "PetDev",
         description: "Uma landing page para serviços de pets",
         url: "https://github.com/SamuelRicardos/petdev",
@@ -74,24 +127,27 @@ const projects = [
         image: '/projects/PetDev.png'
     },
     {
-        title: "LoginPage",
-        description: "Uma página de login e cadastro com integração com back-end",
-        url: "https://github.com/SamuelRicardos/login-page-frontend",
+        title: "MarketList",
+        description: "Um CRUD de lista de mercado. Com funcionalidades extras como tema claro/escuro e histórico de compras",
+        url: "https://github.com/SamuelRicardos/lista-de-mercado",
         tech: [
-            { name: "Angular", icon: FaAngular, color: "#C50836" },
-            { name: "Java", icon: FaJava, color: "#096CAB" },
-            { name: "Spring Boot", icon: SiSpringboot, color: "#71B544" },
+            { name: "React", icon: FaReact, color: "#61DAFB" },
+            { name: "Vite", icon: SiVite, color: "#3178C6" },
+            { name: "Zustand", icon: RiBearSmileFill, color: "#453F39" },
         ],
-        image: '/projects/LoginPage.png'
+        image: '/projects/ListaMercado.png'
     },
 ]
 
 
 export default function Main() {
+    const [showAll, setShowAll] = useState(false);
+    const visibleProjects = showAll ? projects : projects.slice(0, 6);
+
     return (
         <section className=" py-32 relative" id='work'>
             <div className="max-w-7xl mx-auto px-6">
-                
+
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -106,13 +162,13 @@ export default function Main() {
                     to-tertiary rounded-full"/>
 
                 </motion.div>
-                
+
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
             gap-8 relative z-10">
 
                     {
-                        projects.map((project, i) => (
+                        visibleProjects.map((project, i) => (
                             <motion.div
                                 key={i}
                                 initial={{ opacity: 0, y: 50 }}
@@ -123,10 +179,10 @@ export default function Main() {
                                     transition: { duration: 0.2 }
                                 }}
 
-                                className="group relative h-[500px] rounded-3xl overflow-hidden
+                                className="group relative h-[550px] rounded-3xl overflow-hidden
                     bg-surface border border-white/10 cursor-pointer"
                             >
-                                
+
                                 <motion.div
                                     className="h-[250px] relative"
                                     whileHover={{ scale: 1.05 }}
@@ -142,7 +198,7 @@ export default function Main() {
                                     />
                                 </motion.div>
 
-                                
+
                                 <motion.div
                                     className="p-6 h-[25px] bg-surface"
                                     transition={{ duration: 0.3 }}
@@ -193,26 +249,26 @@ export default function Main() {
 
 
                 </div>
-                
-                {/* <motion.div
+
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
                     className="flex justify-center mt-20 relative z-[5]"
                 >
-
-                    <button className="relative px-8 py-3 rounded-full bg-surface
-                    border border-white/10 hover:border-primary/10 transition-all group">
-                        <span className="text-content transition-colors
-                        relative z-[1]">
-                            Ver mais
+                    <button
+                        onClick={() => setShowAll(prev => !prev)}
+                        className="relative px-8 py-3 rounded-full bg-surface
+    border border-white/10 hover:border-primary/10 transition-all group"
+                    >
+                        <span className="text-content transition-colors relative z-[1]">
+                            {showAll ? "Ver menos" : "Ver mais"}
                         </span>
                         <div className="absolute inset-0 rounded-full
-                        bg-gradient-to-r from-primary/10 to-tertiary/10
-                        opacity-0 group-hover:opacity-100 transition-opacity"/>
+    bg-gradient-to-r from-primary/10 to-tertiary/10
+    opacity-0 group-hover:opacity-100 transition-opacity" />
                     </button>
-
-                </motion.div> */}
+                </motion.div>
             </div>
 
         </section>

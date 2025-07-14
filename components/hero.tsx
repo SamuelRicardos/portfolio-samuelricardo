@@ -57,7 +57,7 @@ Especializado em Angular, React, Next.js, Node.js, Java, Spring Boot, MongoDB e 
                         </motion.p>
 
 
-                        <Link href="/CurriculoSamuelRicardo_Fullstack.pdf" download>
+                        <Link href="CurriculoSamuelRicardo_DesenvolvedorFullstack.pdf">
                             <motion.button
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
