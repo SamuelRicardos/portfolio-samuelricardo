@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
   { name: 'Projetos', href: '/' },
-  { name: 'Sobre mim', href: '/sobremim' },
+  // { name: 'Sobre mim', href: '/sobremim' },
   { name: 'Contato', href: '/contato' },
 ];
 
