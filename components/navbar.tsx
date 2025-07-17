@@ -6,7 +6,7 @@ import { GithubIcon, LinkedInIcon} from './social-icons';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
-  { name: 'Projetos', href: '/' },
+  { name: 'Home', href: '/' },
   // { name: 'Sobre mim', href: '/sobremim' },
   { name: 'Contato', href: '/contato' },
 ];
