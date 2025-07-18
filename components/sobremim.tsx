@@ -14,7 +14,7 @@ const SobreMim = () => {
         <p className="text-zinc-600 dark:text-zinc-300 text-lg leading-relaxed mb-6">
           Tenho experiência com front-end moderno usando <strong>React, Next.js, Angular</strong> e estilização com <strong>TailwindCSS</strong>,
           além de back-end com <strong>Django (Python)</strong> e <strong>Java (Quarkus e Spring Boot)</strong>.
-          Trabalho com bancos de dados como <strong>PostgreSQL, MongoDB e MySQL</strong> e tenho conhecimento em metodologias ágeis e desenvolvo com foco em qualidade de código, acessibilidade e boas práticas.
+          Trabalho com bancos de dados como <strong>PostgreSQL, MongoDB e MySQL</strong>, tenho conhecimento em metodologias ágeis e desenvolvo com foco em qualidade de código, acessibilidade e boas práticas.
         </p>
         <p className="text-zinc-600 dark:text-zinc-300 text-lg leading-relaxed">
           Também me preocupo com a experiência do usuário, utilizando ferramentas como o <strong>Figma</strong> para prototipação e alinhamento visual entre design e desenvolvimento.
