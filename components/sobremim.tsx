@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaPython, FaJava } from "react-icons/fa";
-import { SiNextdotjs, SiDjango, SiTailwindcss, SiAngular, SiPostgresql, SiFigma } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiAngular, SiPostgresql, SiFigma } from "react-icons/si";
 
 const SobreMim = () => {
   return (
