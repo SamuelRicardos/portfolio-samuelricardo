@@ -150,7 +150,7 @@ export default function Main() {
     return (
         <>
         <SobreMim/>
-            <section className=" py-32 relative" id='work'>
+            <section className=" py-32 relative" id='projects'>
                 <div className="max-w-7xl mx-auto px-6">
 
 
