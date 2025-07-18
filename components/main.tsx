@@ -9,6 +9,8 @@ import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import { useState } from "react";
 import ExperienceTimeline from "./ExperienceTimeline";
+import Contato from "./contato";
+import SobreMim from "./sobremim";
 
 
 const projects = [
@@ -147,6 +149,7 @@ export default function Main() {
 
     return (
         <>
+        <SobreMim/>
             <section className=" py-32 relative" id='work'>
                 <div className="max-w-7xl mx-auto px-6">
 
@@ -275,6 +278,7 @@ export default function Main() {
 
             </section>
             <ExperienceTimeline />
+            <Contato/>
         </>
     );
 }

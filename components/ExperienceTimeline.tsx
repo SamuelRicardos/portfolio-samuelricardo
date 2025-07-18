@@ -59,7 +59,7 @@ export default function ExperienceTimeline() {
         <section className="py-32 relative bg-background" id="experience">
             <div className="max-w-4xl mx-auto px-6">
                 <h2 className="text-4xl md:text-5xl font-bold text-center text-content mb-16">
-                    Linha do tempo profissional
+                    Experiência profissional
                 </h2>
 
                 <div className="relative border-l border-white/10">
